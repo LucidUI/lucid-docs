@@ -1,0 +1,26 @@
+---
+title: Sidebar
+tags: [navigation]
+---
+
+
+import CodeBlock from '@theme/CodeBlock';
+import SidebarHTML from '!!raw-loader!./snippet.html';
+
+
+A fixed vertical sidebar with a user header and navigation links.
+
+## Preview
+<div class="component-preview-background [&>div>aside]:relative [&>div>aside]:h-[50vh]">
+  <div dangerouslySetInnerHTML={{ __html: SidebarHTML }} />
+</div>
+
+### HTML Snippet
+<CodeBlock language="html">{SidebarHTML}</CodeBlock>
+
+### Notes
+- The sidebar is fixed to the left and takes up the full screen height (`h-screen`).
+- Replace the placeholder "User Header" with a real user profile component (e.g., avatar, name, status).
+- Navigation items are styled as links with hover states; update the `<a>` tags with actual `href` attributes or router links.
+- Use `flex-1` on the `<nav>` so the navigation grows and scrolls if needed.
+- Apply `dark:` variants to ensure proper theming in dark mode.
