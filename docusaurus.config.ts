@@ -12,11 +12,11 @@ const config = {
 		[
 			'@docusaurus/plugin-content-docs',
 			{
-				id: 'components',
-				path: 'components',
+				id: 'docs',
+				path: 'docs',
 				routeBasePath: '/',
 				sidebarPath: require.resolve('./sidebars.components.ts'),
-				editUrl: 'https://github.com/MaximilianKos/lucid-docs/edit/main/',
+				editUrl: 'https://github.com/LucidUI/lucid-docs/tree/main/docs',
 			},
 		],
 	],
