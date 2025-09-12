@@ -1,0 +1,23 @@
+---
+title: Primary Button
+tags: [button, forms, cta]
+---
+
+
+import CodeBlock from '@theme/CodeBlock';
+import ButtonHtml from '!!raw-loader!./snippet.html';
+
+
+A rounded primary button with proper focus states.
+
+## Preview
+<div className="p-6 border rounded-xl bg-gray-50 not-prose">
+  <div dangerouslySetInnerHTML={{ __html: ButtonHtml }} />
+</div>
+
+### HTML Snippet
+<CodeBlock language="html">{ButtonHtml}</CodeBlock>
+
+### Notes
+- Use `type="button"` to avoid accidental submits.
+- Add `aria-busy="true"` when showing a spinner.
