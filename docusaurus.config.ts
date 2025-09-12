@@ -1,7 +1,7 @@
 const config = {
 	title: 'LucidUI',
 	url: 'https://Maximiliankos.github.io',
-	baseUrl: '/',
+	baseUrl: '/lucid-docs/',
 	favicon: 'img/favicon.ico',
 	organizationName: 'LucidUI',
 	projectName: 'lucid-ui',
