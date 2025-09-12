@@ -36,9 +36,19 @@ const config = {
 				src: 'logo-transparent.png',
 				href: '/',
 				height: 42,
-			}
+			},
 		},
 	},
+
+	themes: [
+    [
+      '@docusaurus/theme-classic',
+      {
+        customCss: require.resolve('./src/css/custom.css'),
+      },
+    ],
+  ],
+
 
 	// Make @site alias available for raw imports
 	webpack: { jsLoader: (isServer) => ({ loader: require.resolve('babel-loader'), options: { presets: [require.resolve('@docusaurus/core/lib/babel/preset')] } }) },
