@@ -16,7 +16,7 @@ const config = {
 				path: 'docs',
 				routeBasePath: '/',
 				sidebarPath: require.resolve('./sidebars.components.ts'),
-				editUrl: 'https://github.com/LucidUI/lucid-docs/tree/main/docs',
+				editUrl: 'https://github.com/LucidUI/lucid-docs/tree/main',
 			},
 		],
 	],
