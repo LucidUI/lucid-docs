@@ -1,4 +1,10 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+.component-preview-background {
+	@apply border border-gray-200 rounded-xl shadow-2xs p-4 dark:bg-neutral-700/30 dark:border-neutral-700;
+}
