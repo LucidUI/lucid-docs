@@ -1,0 +1,25 @@
+---
+title: Avatar
+tags: [navigation]
+---
+
+
+import CodeBlock from '@theme/CodeBlock';
+import AvatarHTML from '!!raw-loader!./snippet.html';
+
+
+A placeholder to display user profiles.
+
+## Preview
+<div class="component-preview-background">
+  <div dangerouslySetInnerHTML={{ __html: AvatarHTML }} />
+</div>
+
+### HTML Snippet
+<CodeBlock language="html">{AvatarHTML}</CodeBlock>
+
+### Notes
+- Use rounded-full to keep avatars circular.
+- Control size with size-* classes (size-8, size-11, etc.).
+- Replace the sample image URL with the user’s profile image.
+- Always set a descriptive alt attribute for accessibility.
